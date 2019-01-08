@@ -1,0 +1,16 @@
+spring:
+    jpa:
+        generate-ddl: false
+        show-sql: true
+        hibernate:
+            ddl-auto: none
+    datasource:                             # 指定数据源
+        platform: h2                        # 指定数据源类型
+logging:
+    level:
+        root: info
+        org.hibernate : info
+        org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+        org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+server:
+    port: 8100
